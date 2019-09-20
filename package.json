@@ -31,6 +31,11 @@
     "redux-observable": "^1.2.0",
     "rxjs": "^6.5.3"
   },
+  "peerDependencies": {
+    "redux-dynamic-modules-core": ">=5.x",
+    "redux-observable": ">=1.x",
+    "rxjs": ">=6.x"
+  },
   "devDependencies": {
     "tslint": "^5.20.0",
     "tslint-eslint-rules": "^5.4.0",
