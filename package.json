@@ -1,6 +1,6 @@
 {
   "name": "redux-dynamic-modules-observable",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "You can use redux-dynamic-modules alongside redux-observable so that you can add/remove Epics along with your modules.",
   "main": "src/index.ts",
   "scripts": {
