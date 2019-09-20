@@ -4,12 +4,22 @@
   "description": "You can use redux-dynamic-modules alongside redux-observable so that you can add/remove Epics along with your modules.",
   "main": "src/index.ts",
   "scripts": {
+    "lint:ts": "tslint --project tsconfig.json",
+    "lint:ts:fix": "npm run lint:ts -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/shinvey/redux-dynamic-modules-observable.git"
   },
+  "keywords": [
+    "react",
+    "redux",
+    "module",
+    "dynamic",
+    "load",
+    "observable"
+  ],
   "author": "shinvey@qq.com",
   "license": "MIT",
   "bugs": {
@@ -20,5 +30,10 @@
     "redux-dynamic-modules-core": "^5.0.2",
     "redux-observable": "^1.2.0",
     "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "tslint": "^5.20.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.6.3"
   }
 }
