@@ -1,0 +1,31 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# webstorm configuration data
+.idea*
+
+# macos DS Store
+.DS_Store
+
+# build output
+dist
+zip
+
+# npm/yarn
+node_modules
+npm-debug.log
+*lock.*
+*.lock
+.pnp*
+
+# log file
+*.log
+
+# for custom build
+*.custom.js
+
+# for sonnar scanner and sornar lint
+.scannerwork
+.sonarlint
+
+# for patch files
+*.patch

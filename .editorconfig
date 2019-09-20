@@ -1,0 +1,24 @@
+# http://editorconfig.org
+
+# IDE对.editorconfig文件向父级目录方向的查找到此停止
+root = true
+
+# 为兼容的IDE设定文本文件默认配置
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+# 单个文本文件最多能有80行可以编辑
+max_line_length = 80
+trim_trailing_whitespace = true
+
+# markdown文本文件
+[*.md]
+max_line_length = 0
+trim_trailing_whitespace = false
+
+[COMMIT_EDITMSG]
+# .git/COMMIT_EDITMSG不受max_line_length限制
+max_line_length = 0

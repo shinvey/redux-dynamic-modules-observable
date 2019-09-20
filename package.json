@@ -1,0 +1,24 @@
+{
+  "name": "redux-dynamic-modules-observable",
+  "version": "5.1.0",
+  "description": "You can use redux-dynamic-modules alongside redux-observable so that you can add/remove Epics along with your modules.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shinvey/redux-dynamic-modules-observable.git"
+  },
+  "author": "shinvey@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shinvey/redux-dynamic-modules-observable/issues"
+  },
+  "homepage": "https://github.com/shinvey/redux-dynamic-modules-observable#readme",
+  "dependencies": {
+    "redux-dynamic-modules-core": "^5.0.2",
+    "redux-observable": "^1.2.0",
+    "rxjs": "^6.5.3"
+  }
+}
