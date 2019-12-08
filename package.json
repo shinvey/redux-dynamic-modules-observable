@@ -6,8 +6,7 @@
         "type": "github",
         "url": "https://github.com/Microsoft/redux-dynamic-modules"
     },
-    "main": "./lib/index.js",
-    "types": "./lib/index.d.ts",
+    "main": "./src/index.ts",
     "scripts": {
         "prepublish": "npm run build:prod",
         "build:dev": "npm run clean && tsc && webpack --mode development --display-modules --progress --display-error-details",
