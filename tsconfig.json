@@ -1,39 +1,22 @@
 {
-  // ts config 文档查阅
-  // https://basarat.gitbooks.io/typescript/docs/project/tsconfig.html
-  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
-  "compilerOptions": {
-    // Target latest version of ECMAScript.
-    "target": "esnext",
-    // Search under node_modules for non-relative imports.
-    "moduleResolution": "node",
-    // Process & infer types from .js files.
-    // Allow JavaScript files to be compiled.
-    // 允许在.js中的业务代码不使用typescript
-    // 不用编译.js文件
-    // "allowJs": true,
-    // Don't emit; allow Babel to transform files.
-    "noEmit": true,
-    // Enable strictest settings like strictNullChecks & noImplicitAny.
-    // 对于typescript新人，不建议使用严格的类型检查模式
-    // "strict": true,
-    // 允许使用tsx书写react组件
-    "sourceMap": true, /* Generates corresponding '.map' file. */
-    "noImplicitAny": false, /* Raise error on expressions and declarations with an implied 'any' type. */
-    "allowSyntheticDefaultImports": true, /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
-    "experimentalDecorators": true, /* Enables experimental support for ES7 decorators. */
-    "baseUrl": ".",
-    "paths": {
-     "@/*": ["src/*"]
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016"
+        ],
+        "declaration": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "jsx": "react",
+        "outDir": "lib"
     },
-    // Import non-ES modules as default imports.
-    "esModuleInterop": true
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+    "include": [
+        "src/**/*.ts",
+        "../widgets-example/src/widgets/hacker-news/index.js",
+        "../widgets-example/src/widgets/hacker-news/component/index.jsx"
+    ]
 }

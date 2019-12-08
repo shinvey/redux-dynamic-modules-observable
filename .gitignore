@@ -9,6 +9,7 @@
 # build output
 dist
 zip
+lib
 
 # npm/yarn
 node_modules
